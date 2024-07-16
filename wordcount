@@ -1,0 +1,13 @@
+# Prompting the user to enter a sentence
+sentence = input("Please enter a sentence: ").strip()
+
+# Checking if the input is empty or contains only whitespace
+if not sentence:
+    print("You didn't enter anything.")
+else:
+    # Counting the number of words in the sentence
+    word_count = len(sentence.split())
+    
+    # Displaying the word count
+    print(f"You have entered: {sentence}")
+    print(f"The number of words in your sentence is: {word_count}")
